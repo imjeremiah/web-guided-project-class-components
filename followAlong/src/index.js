@@ -67,10 +67,16 @@ class App extends React.Component {
     });
   }
 
-  //Add Item
-  //1. 
   handleAddItem = (item)=> {
-    console.log("adding an item:", item);
+    //Add Item
+    //1. get button click
+    //2. set and retain our state
+    //3. change groceries to include a new item
+
+    this.setState({
+      ...this.state,
+      groceries: 
+    });
   }
 
   // Class methods to update state
