@@ -7,7 +7,6 @@ const Person = (props) => {
   </div>);
 }
 
-
 const App = () => {
   const [state, setState ] = useState({
     name: "Allison",
