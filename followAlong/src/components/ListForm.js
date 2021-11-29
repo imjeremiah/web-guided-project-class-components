@@ -10,7 +10,10 @@ class ListForm extends React.Component {
   // Constructor with state
 
   handleChanges = e => {
-    console.log(e.target.value);
+    this.setState({
+      ...this.state,
+      input: e.target.value
+    });
     // update state with each keystroke
   };
 
@@ -21,6 +24,7 @@ class ListForm extends React.Component {
     this.props.handleAddItem("trees");
   }
   render() {
+    
     return (
       <form>
         {/* This is an uncontrolled component 😬 We want it to be controlled by state */}
