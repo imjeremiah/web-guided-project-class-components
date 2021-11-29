@@ -79,6 +79,10 @@ class App extends React.Component {
     });
   }
 
+  handleToggleItem = (item)=> {
+    console.log("clicked item: ", item.name);
+  }
+
   // Class methods to update state
   render() {
     return (
