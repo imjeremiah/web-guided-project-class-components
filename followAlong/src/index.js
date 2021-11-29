@@ -38,8 +38,7 @@ const groceries = [
   }
 ];
 
-//Clear Purchased
-//1. 
+
 
 
 //Add Item
@@ -55,7 +54,17 @@ class App extends React.Component {
   }
 
   handleToggle = () => {
-    console.log("here");
+    //Clear Purchased
+    //1. Get a button press response.
+    //2. set a new state and retain old state
+    //3. make groceries contain all groceries where purchased === false
+    //4. profit
+    this.setState({
+      ...this.state,
+      groceries: this.state.groceries.filter(item => {
+        return (true);
+      })
+    });
   }
 
   // Class methods to update state
