@@ -41,7 +41,7 @@ const groceries = [
 
 
 
-//Add Item
+
 //Toggle Item
 
 
@@ -65,6 +65,12 @@ class App extends React.Component {
         return (!item.purchased);
       })
     });
+  }
+
+  //Add Item
+  //1. 
+  handleAddItem = ()=> {
+    console.log("adding an item");
   }
 
   // Class methods to update state
