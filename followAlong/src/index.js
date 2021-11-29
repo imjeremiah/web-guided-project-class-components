@@ -74,7 +74,7 @@ class App extends React.Component {
     //3. change groceries to include a new item
 
     const newItem = {
-      name: "Chips",
+      name: item,
       id: Date.now,
       purchased: false
     };
