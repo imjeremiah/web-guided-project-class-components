@@ -73,9 +73,15 @@ class App extends React.Component {
     //2. set and retain our state
     //3. change groceries to include a new item
 
+    const newItem = {
+      name: "Chips",
+      id: Date.now,
+      purchased: false
+    };
+
     this.setState({
       ...this.state,
-      groceries: 
+      groceries: [...this.state.groceries, newItem]
     });
   }
 
