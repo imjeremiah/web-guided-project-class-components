@@ -34,7 +34,7 @@ const groceries = [
   {
     name: 'Granola',
     id: 1248,
-    purchased: false
+    purchased: true
   }
 ];
 
