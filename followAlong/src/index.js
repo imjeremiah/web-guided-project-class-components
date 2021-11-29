@@ -62,7 +62,7 @@ class App extends React.Component {
     this.setState({
       ...this.state,
       groceries: this.state.groceries.filter(item => {
-        return (item.name !== "Bananas");
+        return (!item.purchased);
       })
     });
   }
