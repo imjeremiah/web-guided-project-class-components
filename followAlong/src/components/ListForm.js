@@ -8,7 +8,8 @@ class ListForm extends React.Component {
   };
 
   // class property to submit form
-  handleClick = ()=> {
+  handleClick = (e)=> {
+    e.preventDefault();
     console.log("clicked it");
   }
   render() {
@@ -16,7 +17,7 @@ class ListForm extends React.Component {
       <form>
         {/* This is an uncontrolled component 😬 We want it to be controlled by state */}
         <input type="text" name="item" />
-        <button onClick={this.handlClick}>Add</button>
+        <button onClick={this.handleClick}>Add</button>
       </form>
     );
   }
