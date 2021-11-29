@@ -9,7 +9,7 @@ const groceries = [
   {
     name: 'Bananas',
     id: 123,
-    purchased: true
+    purchased: false
   },
   {
     name: 'Torillas',
@@ -19,7 +19,7 @@ const groceries = [
   {
     name: 'Milk',
     id: 1235,
-    purchased: true
+    purchased: false
   },
   {
     name: 'Pizza Sauce',
@@ -34,15 +34,9 @@ const groceries = [
   {
     name: 'Granola',
     id: 1248,
-    purchased: true
+    purchased: false
   }
 ];
-
-
-
-
-
-//Toggle Item
 
 
 class App extends React.Component {
