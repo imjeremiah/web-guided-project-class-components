@@ -12,13 +12,7 @@ const App = () => {
   return (
     <div>
       <h1>Hello {state.name}. You are { state.age } years old.</h1>
-      <button onClick={()=> {
-        setState({
-          ...state,
-          name: "Warren"
-        });
-
-      }}>Change the name to Warren.</button>
+      <button onClick={handleClick}>Change the name to Warren.</button>
     </div>
   );
 };
