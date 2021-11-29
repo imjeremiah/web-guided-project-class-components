@@ -21,10 +21,11 @@ class ListForm extends React.Component {
   handleClick = (e)=> {
     e.preventDefault();
 
-    this.props.handleAddItem("trees");
+    this.props.handleAddItem(this.state.input);
   }
+
   render() {
-    
+
     return (
       <form>
         {/* This is an uncontrolled component 😬 We want it to be controlled by state */}
