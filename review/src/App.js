@@ -6,8 +6,12 @@ const App = () => {
     age: 33
   });
 
-  // const [name, setName ] = useState("Allison");
-  // const [age, setAge ] = useState(33);
+  const handleClick = () => {
+    setState({
+      ...state,
+      name: "Warren"
+    });
+  }
 
   return (
     <div>
