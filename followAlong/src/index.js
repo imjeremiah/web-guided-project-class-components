@@ -91,7 +91,7 @@ class App extends React.Component {
            <h1>Shopping List</h1>
            <ListForm handleAddItem={this.handleAddItem}/>
          </div>
-        <GroceryList groceries={this.state.groceries} />
+        <GroceryList handleToggleItem={this.handleToggleItem} groceries={this.state.groceries} />
         <button onClick={this.handleToggle} className="clear-btn">Clear Purchased</button>
        </div>
     );
