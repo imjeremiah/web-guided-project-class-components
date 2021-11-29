@@ -2,7 +2,7 @@ import React from 'react';
 
 const Item = props => {
   const handleClick = ()=> {
-    console.log("clicked item ", props.item.name);
+    props.handleToggleItem(props.item);
   }
 
   return (
