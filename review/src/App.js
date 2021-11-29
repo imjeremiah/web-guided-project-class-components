@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 
 const App = () => {
-  const [name, setName ] = useState("Allison");
-  const [age, setAge ] = useState(33);
+  const [state, setState ] = useState({
+    name: "Allion",
+    age: 33
+  });
+  
+  // const [name, setName ] = useState("Allison");
+  // const [age, setAge ] = useState(33);
 
   return (
     <div>
