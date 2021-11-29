@@ -88,7 +88,9 @@ class App extends React.Component {
       ...this.state,
       groceries: this.state.groceries.map(item => {
         if (item.id === 1248) {
-          return {...item, purchased: item.purchased? false: true}
+          return {...item, purchased: !item.purchased}
+        } else {
+          return item;
         }
       })
     })
