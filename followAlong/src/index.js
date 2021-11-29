@@ -54,7 +54,7 @@ class App extends React.Component {
     }
   }
 
-  handleToggle => ()=> {
+  handleToggle = () => {
     console.log("here");
   }
 
