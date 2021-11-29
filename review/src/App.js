@@ -7,6 +7,7 @@ const App = () => {
   return (
     <div>
       <h1>Hello {name}. You are { age } years old.</h1>
+      <button>Change the name to Allison.</button>
     </div>
   );
 };
