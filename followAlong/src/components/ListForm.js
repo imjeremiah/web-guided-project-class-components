@@ -10,7 +10,8 @@ class ListForm extends React.Component {
   // class property to submit form
   handleClick = (e)=> {
     e.preventDefault();
-    console.log("clicked it");
+
+    this.props.handleAddItem("trees");
   }
   render() {
     return (

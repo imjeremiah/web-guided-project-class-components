@@ -69,7 +69,7 @@ class App extends React.Component {
 
   //Add Item
   //1. 
-  handleAddItem = ()=> {
+  handleAddItem = (item)=> {
     console.log("adding an item");
   }
 
