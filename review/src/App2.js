@@ -10,8 +10,9 @@ class App2 extends React.Component {
     }
 
     render() {
-        console.log(this.state);       
-        return(<h1>Hello {name}!</h1>);
+        return(<div>
+            <h1>Hello {this.state.name}! You are {this.state.age} years old.</h1>
+        </div>);
     }
 }
 
