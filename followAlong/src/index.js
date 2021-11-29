@@ -80,6 +80,10 @@ class App extends React.Component {
   }
 
   handleToggleItem = (item)=> {
+    //Toggle Item
+    //1. get button click
+    //2. set and retain our state
+    //3. change groceries to be same before BUT our clicked item has purchased flipped
     console.log("clicked item: ", item.name);
   }
 
