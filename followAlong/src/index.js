@@ -38,12 +38,24 @@ const groceries = [
   }
 ];
 
+//Clear Purchased
+//1. 
+
+
+//Add Item
+//Toggle Item
+
+
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
       groceries: groceries
     }
+  }
+
+  handleToggle => ()=> {
+    console.log("here");
   }
 
   // Class methods to update state
@@ -55,7 +67,7 @@ class App extends React.Component {
            <ListForm />
          </div>
         <GroceryList groceries={this.state.groceries} />
-        <button className="clear-btn">Clear Purchased</button>
+        <button onClick={this.handleToggle} className="clear-btn">Clear Purchased</button>
        </div>
     );
   }
