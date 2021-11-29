@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 const Person = (props) => {
-  console.log(props);
   return (<div>
     <h1>Hello {props.name}. You are { props.age } years old.</h1>
     <p>{props.name} it's really good to meet you.</p>
