@@ -1,12 +1,5 @@
 import React from 'react';
 
-
-// const Person = (props)=> {
-//     return (<div>
-//         <h1>Hello {props.name}! You are {props.age} years old.</h1>
-//     </div>)
-// }
-
 class Person extends React.Component {
     render() {
         return (<div>
