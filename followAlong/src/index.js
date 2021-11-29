@@ -84,7 +84,14 @@ class App extends React.Component {
     //1. get button click
     //2. set and retain our state
     //3. change groceries to be same before BUT our clicked item has purchased flipped
-    console.log("clicked item: ", item.name);
+    this.setState({
+      ...this.state,
+      groceries: this.state.groceries.map(item => {
+        if (item.id === 1248) {
+          return {...item, purchased: item.purchased? false: true}
+        }
+      })
+    })
   }
 
   // Class methods to update state
