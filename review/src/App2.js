@@ -1,5 +1,12 @@
 import React from 'react';
 
+
+const Person = ()=> {
+    return (<div>
+        <h1>Hello {this.state.name}! You are {this.state.age} years old.</h1>
+    </div>)
+}
+
 class App2 extends React.Component {
     constructor() {
         super();
@@ -19,7 +26,7 @@ class App2 extends React.Component {
     
     render() {
         return(<div>
-            <h1>Hello {this.state.name}! You are {this.state.age} years old.</h1>
+            <Person/>
             <button onClick={this.handleClick}>Change the name to another name!!!</button>
         </div>);
     }
