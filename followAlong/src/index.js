@@ -87,7 +87,7 @@ class App extends React.Component {
     this.setState({
       ...this.state,
       groceries: this.state.groceries.map(g => {
-        if (g.id === 1248) {
+        if (g.id === item.id) {
           return {...g, purchased: !g.purchased}
         } else {
           return g;
