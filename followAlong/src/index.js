@@ -86,11 +86,11 @@ class App extends React.Component {
     //3. change groceries to be same before BUT our clicked item has purchased flipped
     this.setState({
       ...this.state,
-      groceries: this.state.groceries.map(item => {
-        if (item.id === 1248) {
-          return {...item, purchased: !item.purchased}
+      groceries: this.state.groceries.map(g => {
+        if (g.id === 1248) {
+          return {...g, purchased: !g.purchased}
         } else {
-          return item;
+          return g;
         }
       })
     })
