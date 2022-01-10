@@ -39,16 +39,62 @@ const groceries = [
 ];
 
 class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      groceries: groceries
+    }
+  }
+
+  handlePurchased = (id) => {
+    // A list of alll our groceries
+    // BUT the clicked grocery has 'purchased' flipped
+    this.setState({
+      groceries: this.state.groceries.map(item => {
+        if(item.id === id) {
+          return({
+            ...item,
+            purchased: !item.purchased
+          });
+        } 
+        return item;
+      })
+    });
+  }
+
+  handleAddItem = (name) => {
+    const newItem = {
+      name: name,
+      id: Date.now(),
+      purchased:  false
+    }
+    this.setState({
+      groceries: [...this.state.groceries, newItem]
+    })
+  }
+
+  handleClear = () => {
+    // filter through groceries
+    // remove all groceries where purchased === true
+    // set state to THAT list
+    this.setState({
+      ...this.state,
+      groceries: this.state.groceries.filter(item => {
+        return(item.purchased === false);
+      })
+    });
+  }
+
   // Class methods to update state
   render() {
     return (
       <div className="App">
         <div className="header">
            <h1>Shopping List</h1>
-           <ListForm />
+           <ListForm handleAddItem={this.handleAddItem} />
          </div>
-        <GroceryList groceries={groceries} />
-        <button className="clear-btn">Clear Purchased</button>
+        <GroceryList handlePurchased={this.handlePurchased} groceries={this.state.groceries} />
+        <button onClick={this.handleClear} className="clear-btn">Clear Purchased</button>
        </div>
     );
   }
